@@ -21,7 +21,7 @@ public class DiscountOperator {
 	    additionalDiscount = 20;}
 	}
 	void finalPrice() {
-	} {
+ 
 
 	finalDiscount = baseDiscount + additionalDiscount;
 	discountedValue = productPrice - (productPrice * finalDiscount / 100);
