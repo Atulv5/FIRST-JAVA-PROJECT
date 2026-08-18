@@ -11,9 +11,8 @@ public class LicenseMainCode {
 		inputAge.age = sc.nextInt();
 		System.out.println("Enter your Current License");
 		inputAge.currentLicense = sc.next();
-		
-		inputAge.checkLicense();
 
+		inputAge.checkLicense();
 
 	}
 

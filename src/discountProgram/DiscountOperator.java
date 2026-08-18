@@ -12,27 +12,24 @@ public class DiscountOperator {
 
 	void promoCodeEntry() {
 
-        Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter your promo code: ");
-        promoCode = input.next();
+		System.out.print("Enter your promo code: ");
+		promoCode = input.next();
 
-        if (promoCode.equals("Promo5")) {
-            additionalDiscount = 5;
-        }
-        else if (promoCode.equals("Promo10")) {
-            additionalDiscount = 10;
-        }
-        else if (promoCode.equals("Promo20")) {
-            additionalDiscount = 20;
-        }
-        else {
-            additionalDiscount = 0;}
-        System.out.println("Invalid Promo Code");
-        }
+		if (promoCode.equals("Promo5")) {
+			additionalDiscount = 5;
+		} else if (promoCode.equals("Promo10")) {
+			additionalDiscount = 10;
+		} else if (promoCode.equals("Promo20")) {
+			additionalDiscount = 20;
+		} else {
+			additionalDiscount = 0;
+		}
+		System.out.println("Invalid Promo Code");
+	}
 
-	void finalPrice()
-	{
+	void finalPrice() {
 
 		finalDiscount = baseDiscount + additionalDiscount;
 		discountedValue = productPrice - (productPrice * finalDiscount / 100);
