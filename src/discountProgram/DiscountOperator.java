@@ -25,8 +25,8 @@ public class DiscountOperator {
 			additionalDiscount = 20;
 		} else {
 			additionalDiscount = 0;
+			System.out.println("Invalid Promo Code");
 		}
-		System.out.println("Invalid Promo Code");
 	}
 
 	void finalPrice() {
