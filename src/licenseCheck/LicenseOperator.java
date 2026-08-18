@@ -1,23 +1,29 @@
 package licenseCheck;
 
 public class LicenseOperator {
-	int age=20;
-	String newLicense;
-	int enteredAge;
+	int age;
+	String currentLicense;
+	String licenseAvailable;
 
 	void checkLicense() {
-		if (age == 16) {
-			newLicense = ("G1");
-			System.out.println(";This driver can be issued a "+newLicense);
-		}
-		else if (age==17) {
-			newLicense = ("G2");
-			System.out.println("This driver can be issued a "+newLicense);
-		}
-		else if (age>=18) {
-			newLicense = ("G");
-			System.out.println("This driver can be issued a "+newLicense);
+		if (age < 16) {
+            System.out.println("We can't issue you a license, age too low");
+        }
+        else if (age >= 16 && currentLicense.equals("G1")) {
+        	licenseAvailable = "G1";
+            System.out.println("The person will get a " + licenseAvailable );
+        }
+        else if (age >= 16 && currentLicense.equals("G2")) {
+        	licenseAvailable = "G2";
+            System.out.println("The person will get a " + licenseAvailable);
+        }
+        else if (age >= 16 && currentLicense.equals("G")) {
+        	licenseAvailable = "G";
+            System.out.println("The person will get a " + licenseAvailable);
+        }
+        else {
+            System.out.println("Please re-enter a proper license designation");
+        }
 		}
 	}
 
-}
