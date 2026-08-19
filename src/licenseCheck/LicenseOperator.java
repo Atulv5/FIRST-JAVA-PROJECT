@@ -11,10 +11,10 @@ public class LicenseOperator {
 		} else if (age >= 16 && currentLicense.equals("G1")) {
 			licenseAvailable = "G1";
 			System.out.println("The person can get a " + licenseAvailable);
-		} else if (age >= 16 && currentLicense.equals("G2")) {
+		} else if (age >= 17 && currentLicense.equals("G2")) {
 			licenseAvailable = "G2";
 			System.out.println("The person can get a " + licenseAvailable);
-		} else if (age >= 16 && currentLicense.equals("G")) {
+		} else if (age >= 18 && currentLicense.equals("G")) {
 			licenseAvailable = "G";
 			System.out.println("The person can get a " + licenseAvailable);
 		} else {
